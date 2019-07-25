@@ -13,9 +13,9 @@
 
 # 文字样式
 
-[智人](https://zh.wikipedia.org/wiki/智人 "学名：Homo sapiens，意为“有智慧的人”")，
+[链接样式](https://zh.wikipedia.org/wiki/智人 "学名：Homo sapiens，意为"有智慧的人"")
 
-**加粗**
+**这是一个加粗的样式**
 
 
 注：除公众号以外的链接**都会被转换为脚注**（没办法，人家也是要恰饭的嘛）。
@@ -86,9 +86,9 @@ int main() {
 }
 ```
 
-然后是一个内联代码： a paragraphg with inline code `{code: 0}`。
+内联代码： a paragraphg with inline code `{code: 0}`。
 
-接下来是表格示例：
+表格：
 
 | Header 1 | Header 2 |
 | --- | --- |
