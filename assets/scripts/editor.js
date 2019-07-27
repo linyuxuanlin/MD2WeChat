@@ -18,7 +18,7 @@ var app = new Vue({
                 { label: '衬线', value: "Optima-Regular, Optima, PingFangSC-light, PingFangTC-light, 'PingFang SC', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif" }
             ],
             currentFont: "Roboto, Oxygen, Ubuntu, Cantarell, PingFangSC-light, PingFangTC-light, 'Open Sans', 'Helvetica Neue', sans-serif",
-            currentSize: '18px',
+            currentSize: '16px',
             sizeOption: [
                 { label: '16px', value: '16px', desc: '默认' },
                 { label: '17px', value: '17px', desc: '正常' },
