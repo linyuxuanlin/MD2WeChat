@@ -24,14 +24,17 @@
                 <div class="logo">{{ title }}</div>
                 <el-form size="mini" class="ctrl" :inline=true>
                     <el-form-item label="Editor Themes">
-                        <el-select v-model="currentEditorTheme" size="mini" placeholder="选择字体" @change="editorThemeChanged">
-                            <el-option v-for="editorTheme in editorThemes" :key="editorTheme.value" :label="editorTheme.label" :value="editorTheme.value">
+                        <el-select v-model="currentEditorTheme" size="mini" placeholder="选择字体"
+                            @change="editorThemeChanged">
+                            <el-option v-for="editorTheme in editorThemes" :key="editorTheme.value"
+                                :label="editorTheme.label" :value="editorTheme.value">
                             </el-option>
                         </el-select>
                     </el-form-item>
                     <el-form-item label="Fonts">
                         <el-select v-model="currentFont" size="mini" placeholder="选择字体" @change="fontChanged">
-                            <el-option v-for="font in builtinFonts" :style="{fontFamily: font.value}" :key="font.value" :label="font.label" :value="font.value">
+                            <el-option v-for="font in builtinFonts" :style="{fontFamily: font.value}" :key="font.value"
+                                :label="font.label" :value="font.value">
                                 <span style="float: left">{{ font.label }}</span>
                                 <span style="float: right; color: #8492a6; font-size: 13px">Abc</span>
                             </el-option>
@@ -39,7 +42,8 @@
                     </el-form-item>
                     <el-form-item label="Font Size">
                         <el-select v-model="currentSize" size="mini" placeholder="选择段落字体大小" @change="sizeChanged">
-                            <el-option v-for="size in sizeOption" :key="size.value" :label="size.label" :value="size.value">
+                            <el-option v-for="size in sizeOption" :key="size.value" :label="size.label"
+                                :value="size.value">
                                 <span style="float: left">{{ size.label }}</span>
                                 <span style="float: right; color: #8492a6; font-size: 13px">{{ size.desc }}</span>
                             </el-option>
@@ -47,7 +51,8 @@
                     </el-form-item>
                     <el-form-item label="Themes">
                         <el-select v-model="currentTheme" size="mini" placeholder="选择主题样式" @change="themeChanged">
-                            <el-option v-for="theme in themeOption" :key="theme.value" :label="theme.label" :value="theme.value">
+                            <el-option v-for="theme in themeOption" :key="theme.value" :label="theme.label"
+                                :value="theme.value">
                                 <span style="float: left">{{ theme.label }}</span>
                                 <span style="float: right; color: #8492a6; font-size: 13px">{{ theme.author }}</span>
                             </el-option>
@@ -64,7 +69,8 @@
                     </el-col>
                     <el-col :span="12" class="preview-wrapper">
                         <section>
-                            <div class="hint"><a href="#" @click="copy" class="copy-button">点此复制</a>，粘贴进公众号的编辑器（代码块需鼠标点击一下高亮）</div>
+                            <div class="hint"><a href="#" @click="copy"
+                                    class="copy-button">点此复制</a>，粘贴进公众号的编辑器（代码块需鼠标点击一下高亮）</div>
                             <div class="preview" contenteditable="true">
                                 <div id="output" v-html="output">
                                 </div>
@@ -82,13 +88,14 @@
                 <p>能解决 <code>ul</code> 和 <code>ol</code> 渲染时样式被微信编辑器重置的问题；</p>
                 <p>能把外部链接自动转为参考文献索引，并且附在文章末尾</p>
                 <p>&nbsp;</p>
-                <h3>关于我</h3>
-                <p>我是 <a href="http://wiki-power.com">Power Lin</a>，这个网页基于 WeChat Format ，原作者是<a href='https://lyric.im' target='_blank' class='url'>Lyric</a>. 我修复了一些 bug ，并自定义了样式。</p>
+                <h3>关于</h3>
+                <p>此网页基于 WeChat Format ，原作者是<a href='https://lyric.im' target='_blank'
+                        class='url'>Lyric</a>，基于原网页我自定义了样式，并托管到自己的 GitHub Pages 上。</p>
 
             </div>
             <span slot="footer" class="dialog-footer">
-        <el-button type="primary" @click="aboutDialogVisible = false">好</el-button>
-      </span>
+                <el-button type="primary" @click="aboutDialogVisible = false">好</el-button>
+            </span>
         </el-dialog>
     </div>
 
